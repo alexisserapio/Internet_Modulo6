@@ -6,8 +6,17 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B3A18E762E875DC600AB430C /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3A18E752E875DC600AB430C /* Network.framework */; };
+		B3A18E782E875DCE00AB430C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3A18E772E875DCE00AB430C /* WebKit.framework */; };
+		B3A18E7C2E87677600AB430C /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3A18E7B2E87677600AB430C /* SafariServices.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		B3A18E552E874A6C00AB430C /* Internet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Internet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3A18E752E875DC600AB430C /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = System/Library/Frameworks/Network.framework; sourceTree = SDKROOT; };
+		B3A18E772E875DCE00AB430C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		B3A18E7B2E87677600AB430C /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -36,6 +45,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3A18E782E875DCE00AB430C /* WebKit.framework in Frameworks */,
+				B3A18E762E875DC600AB430C /* Network.framework in Frameworks */,
+				B3A18E7C2E87677600AB430C /* SafariServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				B3A18E572E874A6C00AB430C /* Internet */,
+				B3A18E742E875DC400AB430C /* Frameworks */,
 				B3A18E562E874A6C00AB430C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +69,16 @@
 				B3A18E552E874A6C00AB430C /* Internet.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B3A18E742E875DC400AB430C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3A18E7B2E87677600AB430C /* SafariServices.framework */,
+				B3A18E772E875DCE00AB430C /* WebKit.framework */,
+				B3A18E752E875DC600AB430C /* Network.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,9 +183,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexisserapio.Internet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -188,9 +215,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexisserapio.Internet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
