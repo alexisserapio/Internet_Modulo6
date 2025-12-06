@@ -10,6 +10,7 @@
 		B3A18E762E875DC600AB430C /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3A18E752E875DC600AB430C /* Network.framework */; };
 		B3A18E782E875DCE00AB430C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3A18E772E875DCE00AB430C /* WebKit.framework */; };
 		B3A18E7C2E87677600AB430C /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3A18E7B2E87677600AB430C /* SafariServices.framework */; };
+		B3A18ED82E88501100AB430C /* DynamicButton in Frameworks */ = {isa = PBXBuildFile; productRef = B3A18ED72E88501100AB430C /* DynamicButton */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 			files = (
 				B3A18E782E875DCE00AB430C /* WebKit.framework in Frameworks */,
 				B3A18E762E875DC600AB430C /* Network.framework in Frameworks */,
+				B3A18ED82E88501100AB430C /* DynamicButton in Frameworks */,
 				B3A18E7C2E87677600AB430C /* SafariServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +103,7 @@
 			);
 			name = Internet;
 			packageProductDependencies = (
+				B3A18ED72E88501100AB430C /* DynamicButton */,
 			);
 			productName = Internet;
 			productReference = B3A18E552E874A6C00AB430C /* Internet.app */;
@@ -130,6 +133,9 @@
 			);
 			mainGroup = B3A18E4C2E874A6C00AB430C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B3A18ED62E88501100AB430C /* XCRemoteSwiftPackageReference "DynamicButton" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B3A18E562E874A6C00AB430C /* Products */;
 			projectDirPath = "";
@@ -368,6 +374,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B3A18ED62E88501100AB430C /* XCRemoteSwiftPackageReference "DynamicButton" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yannickl/DynamicButton.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B3A18ED72E88501100AB430C /* DynamicButton */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3A18ED62E88501100AB430C /* XCRemoteSwiftPackageReference "DynamicButton" */;
+			productName = DynamicButton;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B3A18E4D2E874A6C00AB430C /* Project object */;
 }

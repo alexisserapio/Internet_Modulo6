@@ -1,0 +1,15 @@
+{
+  "originHash" : "a893c09232b9ca4eb1a54300b3d4f67070a085e056526a448971a499d5895517",
+  "pins" : [
+    {
+      "identity" : "dynamicbutton",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/yannickl/DynamicButton.git",
+      "state" : {
+        "revision" : "4fbd60e46a548e77fd118483bbb4e58d3c11c5ed",
+        "version" : "6.2.1"
+      }
+    }
+  ],
+  "version" : 3
+}
